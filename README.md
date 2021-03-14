@@ -4,6 +4,17 @@ Sentence Vector Exploration to compare two sentence vector representation method
 # Setting the Environment
 # Creating the EMR cluster
 ```
+You are suggested to download the MNLI data set from the GLUE site GLUE Tasks. Download the MultiNLI Matched as a zip file. After extracting the zip file. You will see five tsv
+files at top level folder. These are the data sets you will work with.
+• train.tsv: the training data set
+• dev matched.tsv: the development set with matched genre
+• dev mismatched.tsv : the development set with mismatched genre
+• test matched.tsv: the test set with matched genre
+• test mismatched.tsv: the test set with mismatched genre
+All tsv files have many columns. The data we work with are on the following three columns: genre, sentence1, sentence2.
+There are many stop words lists available online. You can use any that you are familiar with. For students with no preference, we recommend you to use the Stanford Stop Word
+List.
+
 Login to AWS console and proceed to S3 dashboard. Create a bucket comp5349-auda0496 with a folder assignment and upload the datasets from the MNLI data set. The files to be uploaded are:
 *train.tsv: the training data set
 *dev_matched.tsv: the development set with matched genre
